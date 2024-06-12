@@ -1,7 +1,7 @@
 describe('Class', () => {
     class Customer {
         constructor() {
-            console.log('Hello Customer!');
+            console.info('Hello');
         }
     }
 
