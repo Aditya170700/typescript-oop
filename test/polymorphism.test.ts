@@ -20,5 +20,13 @@ describe('polymorphism', () => {
 
         employee = new VicePrecident('Aditya');
         console.log(employee);
+
+        function sayHello(employee: Employee) {
+            console.log(employee);
+        }
+
+        sayHello(new Employee('Aditya'));
+        sayHello(new Manager('Ricki'));
+        sayHello(new VicePrecident('Erni Safitri'));
     });
 });
