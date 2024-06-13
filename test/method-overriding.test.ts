@@ -20,6 +20,7 @@ describe('MethodOverriding', () => {
         }
 
         sayHello(name: string): void {
+            super.sayHello(name);
             console.log(`Hello ${name}, my name is ${this.name}, im your manager`);
         }
     }
